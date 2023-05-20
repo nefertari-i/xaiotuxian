@@ -1,13 +1,10 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 <template>
-  <header>
-      <HelloWorld />
-  </header>
+  <RouterView/>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 body{
   padding: 24px;
 }
