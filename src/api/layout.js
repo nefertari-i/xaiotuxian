@@ -23,3 +23,22 @@ export const getGoodsAPI = () => {
     url: '/home/goods'
   })
 }
+// 获取面包屑路由
+export const getTopCategoryAPI = (id) => {
+  return httpInstance({
+    url:'/category',
+    params:{
+      id
+    }
+  })
+}
+export function getBannerAPITwo (params = {}) {
+  // 默认为1 商品为2
+  const { distributionSite = '1' } = params
+  return httpInstance({
+    url: '/home/banner',
+    params: {
+      distributionSite
+    }
+  })
+}
