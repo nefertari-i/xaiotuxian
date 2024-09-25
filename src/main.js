@@ -8,7 +8,7 @@ import router from './router'
 const app = createApp(App)
 // import './assets/main.css'
 import '@/styles/common.scss';
-
+console.log("1111");
 app.use(createPinia())
 app.use(router)
 app.use(lazyPlugin)
